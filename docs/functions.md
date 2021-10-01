@@ -166,3 +166,229 @@ Executamos agora nosso programa boraver.py normalmente no prompt de comando.
   <img height="150em" src="../img/functions/fig12.png"/>
   <h6>Figura 12 – Executando o código que criamos, que chama o módulo que criamos. Dá muito trabalho ser um programador tão autossuficiente...</h6>
 </div>
+
+<h2>6) LISTAS</h2>
+A gente aprende no curso de Computação que a definição de lista é uma estrutura de dados composta por itens organizados de forma linear, na qual cada um pode ser acessado a partir de um índice, começando do zero, onde cada índice representa sua posição na lista... etc.
+  
+O que não te contam nas disciplinas regulares do curso (ou contam, muito superficialmente) é que, diferentemente da linguagem C, por exemplo, as listas em Python não-obrigatoriamente armazenam somente objetos do mesmo tipo. Isso significa que podemos armazenar simultaneamente strings, floats, inteiros... simplificando: em Python, nossas listas podem armazenar basicamente qualquer coisa. Inclusive outras listas.
+  
+<h3>6.1) Representação</h3>
+
+Nossa lista em Python vai ser representada como uma sequência de objetos separados por vírgula, dentro de colchetes. Assim, uma lista vazia, por exemplo, pode ser definida pelos colchetes vazios. A Tabela 1 mostra uma listagem de algumas possibilidades de criação de listas. Na primeira coluna temos a declaração da lista e na segunda coluna temos o que é armazenado nessa declaração.
+
+<div align='center'>
+  <table>
+    <tr>
+      <td>univasf = []</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>univasf = [‘lab’, ‘ru’, 123, 111]</td>
+      <td>lab, ru, 123, 111</td>
+    </tr>
+    <tr>
+      <td>nova_uni = [‘tristeza’, univasf]</td>
+      <td>tristeza, [lab, ru, 123, 111]</td>
+    </tr>
+  </table>
+  <h6>Tabela 1 – Possibilidades de listas em Python</h6>
+</div>
+
+<h3>6.2) OPERADORES</h3>
+<li>Acesso por índices: Uma lista é armazenada por índices, começando a partir do zero. Portanto, podemos acessar os objetos de nossa lista através dos seus índices. Por exemplo, a lista chamada univasf da Tabela 1 contém quatro elementos, cujos índices variam de zero a três. Dessa forma, podemos acessar cada um dos objetos através dos seus índices.
+  <div align='center'>
+  <table>
+    <tr>
+      <td>univasf[0]</td>
+      <td>lab</td>
+    </tr>
+    <tr>
+      <td>univasf[1]</td>
+      <td>ru</td>
+    </tr>
+    <tr>
+      <td>univasf[2]</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>univasf[3]</td>
+      <td>111</td>
+    </tr>
+  </table>
+</div>
+  
+<li>Comprimento: O comprimento de uma lista é devolvido através da função len(). Por exemplo, se chamarmos a função len() passando como parâmetro nossa lista univasf, será nos devolvido o tamanho quatro. Se passarmos como parâmetro a nova_uni, obteremos o tamanho dois, pois univasf é um único objeto dentro da lista nova_uni.
+  <div align='center'>
+  <table>
+    <tr>
+      <td>len(univasf)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>len(nova_lista)</td>
+      <td>2</td>
+    </tr>
+  </table>
+</div>
+  
+<li>Concatenação e Multiplicação: Podemos concatenar listas usando a adição e multiplicar listas por um inteiro, que vai gerar várias cópias dos seus itens.
+  <div align='center'>
+  <table>
+    <tr>
+      <td>univasf+nova_uni</td>
+      <td>ab, ru, 123, 111, tristeza, [lab, ru, 123, 111]</td>
+    </tr>
+    <tr>
+      <td>lista*3</td>
+      <td>ab, ru, 123, 111, lab, ru, 123, 111, lab, ru, 123, 111</td>
+    </tr>
+  </table>
+</div>
+  
+<li>Verificação de itens: Outra funcionalidade interessante é que podemos procurar um objeto específico em uma lista. Usaremos o operador in, que deve ser usado da seguinte forma:
+‘nomeDoObjeto’ in nomeDaLista
+Esse operador vai retornar um valor booleano (True ou False), que obviamente vai indicar se o objeto está ou não contido na lista.
+  <div align='center'>
+  <table>
+    <tr>
+      <td>ru’ in univasf</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>‘lolzinho’ in univasf</td>
+      <td>False</td>
+    </tr>
+  </table>
+</div>
+  
+<li>Mínimo, máximos e somatório: Caso declaremos uma lista numérica, podemos usar as funções min(), max() e sum(), que devolvem, respectivamente, o menor valor, o maior valor e a soma dos elementos da lista. Por exemplo, declaramos uma lista chamada números:
+numeros = [14.55, 67, 89.88, 10, 21.5]
+Poderemos utilizar as funções descritas, que nos retornarão:
+<div align='center'>
+  <table>
+    <tr>
+      <td>min(numeros)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>max(numeros)</td>
+      <td>89.88</td>
+    </tr>
+    <tr>
+      <td>sum(numeros)</td>
+      <td>202.93</td>
+    </tr>
+  </table>
+</div>
+  
+<h3>6.2) Métodos</h3>
+A diferença entre uma operação e um método é que a operação nos retornam um resultado, enquanto o método efetua alguma alteração na estrutura da lista. Os métodos são utilizados com a seguinte sintaxe:
+  
+```nomeDaLista.método(parâmetro)```
+  
+Vejamos abaixo alguns exemplos de métodos.
+
+<li>append(objeto): Caso declaremos uma lista chamada para_ler:
+<div align='center'><table><tr><td>para_ler = [‘1984’, ‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’]</td></tr></table></div>
+
+Podemos adicionar um novo elemento no final dessa lista usando o método append e passando qual objeto queremos acrescentar. Teremos:
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.append(‘Laranja Mecânica’)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘1984’, ‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’, ‘Laranja Mecânica’]</td>
+    </tr>
+  </table>
+</div>
+
+<li>insert(índice, objeto): Enquanto o método append adiciona um objeto apenas no final da lista, o insert permite adicionar um novo objeto em qualquer índice que escolhermos.
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.insert(0, ‘A Guimba’)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘A Guimba’, ’1984’, ‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’, ‘Laranja Mecânica’]</td>
+    </tr>
+  </table>
+</div>
+  
+<li>pop(indice): Esse método remove um objeto da lista através do seu índice e retorna qual foi o objeto removido.
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.pop(1)</td>
+      <td>‘1984</td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘A Guimba’, ‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’, ‘Laranja Mecânica’]</td>
+    </tr>
+  </table>
+</div>
+  
+<li>remove(objeto): Também remove um objeto da lista, mas ao invés de utilizar o índice, utiliza o nome do objeto. É um método silencioso, não retorna o objeto removido.
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.remove(‘A Guimba’)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’, ‘Laranja Mecânica’]</td>
+    </tr>
+  </table>
+</div>
+  
+<li>sort(): O sort organiza a lista em ordem crescente para números e em ordem alfabética (lexicográfica, para ser chique) para string.
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.sort()</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘Admirável Mundo Novo’, ‘A Revolução dos Bichos’, ‘Fahrenheit 451’, ‘Laranja Mecânica’]</td>
+    </tr>
+  </table>
+</div>
+  
+<li>reverse(): Inverte as posições dos objetos da lista.
+<div align='center'>
+  <table>
+    <tr>
+      <td>para_ler.reverse()</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>para_ler</td>
+      <td>[‘Laranja Mecânica’, ‘Fahrenheit 451’, ‘A Revolução dos Bichos’, ‘Admirável Mundo Novo’]</td>
+    </tr>
+  </table>
+</div>
+  
+<li>count(objeto): Esse método devolve o número de ocorrências de um de um determinado objeto passado como parâmetro. Suponha a lista filmes_vi_hj abaixo:
+<div align='center'><table><tr><td>filmes_vi_hj = [‘Harry Potter 3’, ‘Frozen’, ‘Vingadores 1, ‘Vingadores Sei Lá O Penúltimo, ‘Frozen’]</td></tr></table></div>
+Com o método count, podemos obtere os seguintes resultados:
+<div align='center'>
+  <table>
+    <tr>
+      <td>filmes_vi_hj.count(‘Harry Potter 3’)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>filmes_vi_hj.count(‘Frozen)</td>
+      <td>2</td>
+    </tr>
+  </table>
+</div>
+
+  
