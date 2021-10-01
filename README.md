@@ -1,4 +1,4 @@
-# Guia de Programação em Python
+# GUIA DE PROGRAMAÇÃO EM PYTHON
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 <br/>
@@ -45,12 +45,12 @@ Uma string é um vetor de caracteres. Quando dizemos que uma variável tem o tip
 - "Gota d’água"
 
 ### 4.1) Caracteres especiais em strings
-Caracteres especiais são alguns caracteres que tornam mais fácil a manipulação de strings. Por exemplo:
-<div align="center">
+Caracteres especiais são alguns caracteres que tornam mais fácil a manipulação de strings. Por exemplo:<br />
+<br /><div align="center">
   <img height="150em" src="./img/readme/tabela1.png"/>
 </div>
 
-Com isso, podemos tornar nossas strings mais esteticamente bonitas e/ou organizadas.
+<br />Com isso, podemos tornar nossas strings mais esteticamente bonitas e/ou organizadas.
 
 ### 4.2) Operações com strings 
 Por se tratar de um vetor de caracteres, podemos muito bem manipular as strings. Para isso,
@@ -66,16 +66,16 @@ indexação associada. Por exemplo, na string ‘Sinais’, temos 6 caracteres. 
 é a letra ‘S’, enquanto a posição [4] é a letra ‘i’.
 </ul>
 
-A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na variável:
-<div align="center">
+A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na variável:<br />
+<br /><div align="center">
   <img height="200em" src="./img/readme/tabela2.png"/>
 </div>
 
 ### 4.3) Métodos úteis com strings
 Podemos também alterar uma string ao utilizar alguns métodos simples. Podemos, por exemplo, procurar uma sílaba, contar quantas vezes uma sílaba aparece na string e muito mais. A tabela abaixo mostra alguns exemplos de uso desses métodos.
 
-A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na variável:
-<div align="center">
+A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na variável:<br />
+<br /><div align="center">
   <img height="200em" src="./img/readme/tabela3.png"/>
 </div>
 
@@ -85,17 +85,18 @@ Os operadores são os símbolos que atuam sobre as variáveis. Citamos:
 <ul>
   <li>
     Operadores aritméticos:
-    <div align="center">
-      <img height="250em" src="./img/readme/tabela4.png"/>
-    </div>
   </li>
-  <li>
-    Operadores comparativos:
-    <div align="center">
-      <img height="140em" src="./img/readme/tabela5.png"/>
-    </div>
-  </li>
-  <li>Operadores lógicos; </li>
+  <br /><div align="center">
+    <img height="250em" src="./img/readme/tabela4.png"/>
+  </div>
+  
+  <br /><li>
+  Operadores comparativos: </li>
+  
+  <br /><div align="center">
+     <img height="140em" src="./img/readme/tabela5.png"/>
+  </div>
+  <br /><li>Operadores lógicos; </li>
   <li>Operador de atribuição (=).</li>
 </ul>
 
