@@ -37,53 +37,22 @@ Uma das características da linguagem é a fácil leitura do seu código, que pe
 
 <i>[!] Curiosidade: O nome Python tem origem no grupo britânico Monty Python, criador do programa Monty Python’s Flying Circus – um programa de humor que foi ao ar pela primeira vez na televisão no ano de 1969.</i>
 
-## 4) TIPOS EM PYTHON
-A parte interessante do Python é que essa é uma linguagem de tipos dinâmicos: ou seja, a
-declaração de tipo da variável não precisa ser feita. A própria linguagem é capaz de escolher
-que tipo usar para cada variável, podendo alterá-lo durante a execução do programa.
-Aqui, teremos quatro tipos numéricos:
-<ul>
-<li> Inteiro (int);
-<li> Ponto flutuante (float);
-<li> Booleano (bool);
-<li> Complexo (complex);
-</ul>
+## 4) STRINGS
+Uma string é um vetor de caracteres. Quando dizemos que uma variável tem o tipo string, é porque nela contém um caractere, uma frase ou até mesmo um texto. Em Python, strings podem ser escritas usando aspas simples ou aspas duplas. Ao usar aspas simples, torna-se mais fácil incluir aspas dentro da string.
+- 'Isso é uma string em Python'
+- "Isso também é uma string em Python"
+- 'Ele disse "Alô?" e desligou o telefone'
+- "Gota d’água"
 
-Todos esses tipos suportam as operações algébricas comuns (adição, subtração, multiplicação
-e divisão) e também podem se relacionar. As figuras abaixo mostram alguns exemplos do
-funcionamento de tipos em Python:
-
-<div style="display: inline_block" align="center">
-  <img height="100em" src="./img/readme/exemplo1.png"/>
-  <img height="100em" src="./img/readme/exemplo2.png"/>
-  <img height="100em" src="./img/readme/exemplo3.png"/>
-  <img height="100em" src="./img/readme/exemplo4.png"/>
-</div>
-
-### 4.1) Tipo string
-Uma string é um vetor de caracteres. Quando dizemos que uma variável tem o tipo string, é
-porque nela contém um caractere, uma frase ou até mesmo um texto.
-Em Python, strings podem ser escritas usando aspas simples ou aspas duplas. Ao usar aspas
-simples, torna-se mais fácil incluir aspas dentro da string.
-
-<ul>
-<li> ‘Isso é uma string em Python’
-<li> “Isso também é uma string em Python”
-<li> ‘Ele disse “Alô?” e desligou o telefone’
-<li> “Gota d’água”
-</ul>
-
-### 4.2) Caracteres especiais em strings
-Caracteres especiais são alguns caracteres que tornam mais fácil a manipulação de strings. Por
-exemplo:
-
+### 4.1) Caracteres especiais em strings
+Caracteres especiais são alguns caracteres que tornam mais fácil a manipulação de strings. Por exemplo:
 <div align="center">
   <img height="150em" src="./img/readme/tabela1.png"/>
 </div>
 
 Com isso, podemos tornar nossas strings mais esteticamente bonitas e/ou organizadas.
 
-### 4.3) Operações com strings 
+### 4.2) Operações com strings 
 Por se tratar de um vetor de caracteres, podemos muito bem manipular as strings. Para isso,
 temos alguns operadores e métodos especiais. Os principais são:
 
@@ -102,7 +71,7 @@ A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na 
   <img height="200em" src="./img/readme/tabela2.png"/>
 </div>
 
-### 4.4) Métodos úteis com strings
+### 4.3) Métodos úteis com strings
 Podemos também alterar uma string ao utilizar alguns métodos simples. Podemos, por exemplo, procurar uma sílaba, contar quantas vezes uma sílaba aparece na string e muito mais. A tabela abaixo mostra alguns exemplos de uso desses métodos.
 
 A tabela abaixo nos dá alguns exemplos de operações e o que é armazenado na variável:
