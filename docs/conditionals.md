@@ -41,9 +41,9 @@ Se retornamos ao exemplo de código anterior, podemos imaginar que você está a
 
 ```python
 if soma > 0:
-     print "Maior que Zero."
+     print "Maior que zero."
 else:
-     print "Menor que Zero."
+     print "Menor que zero."
 ```
 
 Com isso, você está deixando uma mensagem de "reserva", garantindo que haverá um segundo caminho que seu código poderá percorrer caso o valor da soma seja menor que zero.
@@ -56,11 +56,11 @@ A capitã condicional aninhada vem para solucionar esse problema: podemos criar 
 
 ```python
 if soma > 0:
-     print "Maior que Zero."
+     print "Maior que zero."
 elif soma = 0:
-     print "Igual a Zero."
+     print "Igual a zero."
 else:
-     print "Menor que Zero."
+     print "Menor que zero."
 ```
 
 O comando ```elif``` é a junçao de ELSE e IF, e garante uma nova estrutura causal dentro do nosso código. Legal, né?
