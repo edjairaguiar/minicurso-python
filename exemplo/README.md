@@ -1,24 +1,39 @@
-# Guia de Programação em Python
+# Aplicação
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+## Projeto de exemplo: pré-processamento de dados de base de Telecom
+
+No exemplo presente em `churn_preprocessing.py` temos uma aplicação de todos os conceitos apresentados nesta introdução à linguagem Python. Nele, fazemos o pré-processamento de uma base de dados de Telecom pra indicar se um dado cliente vai ou não manter o serviço.
 
 <br/>
 
-Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, para melhor estruturar seu aprendizado, siga a ordem proposta no sumário abaixo:
+Ressalta-se, contudo, que esta é uma representação apenas para fins didáticos, podendo er considerado um _toy problem_. Costumeiramente em Engenharia e Ciência de Dados lida-se com bases bem maiores e problemas mais complexos.
 
-## Sumário
+## Configuração
+- Python version: 3.8
 
-1. [Instalação](./docs/installation.md)
-2. [Configuração do Ambiente de Desenvolvimento](./docs/configuration.md)
-3. [Comentários](./docs/comments.md)
-4. [Variáveis](./docs/variables.md)
-5. [Funções](./docs/functions.md)
-6. [Desvios Condicionais](./docs/conditionals.md)
-7. [Estruturas de Repetição](./docs/looping.md)
-8. [Aplicação](./exemplo/)
+## Configuração do ambiente de desenvolvimento
 
-## Elaboração
+Os seguintes comandos devem ser executados via linha de comando.
 
-- [@anisiobfilho](https://github.com/anisiobfilho)
-- [@edjairaguiar](https://github.com/edjairaguiar)
-- [@elaynelemos](https://github.com/elaynelemos)
+1. Criação do ambiente virtual
+```shell-session
+virtualenv -p 3.8 .virtualenv
+```
+2. Inicialização do ambiente virtual
+```shell-session
+source .virtualenv/bin/activate
+```
+3. Instalação das dependências
+```shell-session
+pip install -r requirements.txt
+```
+
+## Execução
+
+Para ver este exemplo em funcionamento, rode:
+
+```bash
+python3 churn_preprocessing.py
+```
+
+Ao final, da execução, você notará os 4 arquivos gerados entre bases de treinamento e teste e variáveis alvo (`churned`) correspondentes.
