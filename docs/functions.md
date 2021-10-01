@@ -90,3 +90,79 @@ Na Figura 4 temos um exemplo da utilização do módulo math, utilizando a funç
 <h2>4) OBSERVAÇÕES</h2>
 <li>O editor de texto usado é o Visual Studio Code. Entretanto é possível utilizar qualquer outro editor de texto, desde que a extensão do arquivo seja salva como .py. Outro editores de texto que podem ser usados: WordPad, Notepad++.
 <li>A importação de módulos é custosa computacionalmente, portanto o Python só a realiza uma vez. Caso editemos o módulo durante a execução do nosso código e precisemos que a edição seja utilizada, podemos forçar que o módulo seja importado novamente usando o comando reload(nomeDoMódulo).
+  
+<h2>5) ARQUIVOS PYTHON</h2>
+Embora a opção de utilizar o modo interativo seja uma boa forma de aprender e praticar a sintaxe da linguagem Python, concordemos que não é a forma mais elegante de programar e rodar nossas aplicações.
+
+Assim como em qualquer outra linguagem, é muito mais prático que rodemos nossos programas quando já estão finalizados, em formato de arquivo. Podemos utilizar uma IDE (como usamos o DEV ou o CodeBlocks para programar em .C, por exemplo), mas sempre existe a opção de primeiramente escrever o programa completo em um editor de texto e em seguida executá-lo no prompt de comando.
+
+Por enquanto utilizaremos a opção de executar arquivos no prompt de comando, pois os ambientes de desenvolvimento Python serão abordados mais futuramente, em um capítulo à parte. 
+
+<h3>5.1) Executando arquivos .py</h3>
+Assim como os módulos, a extensão de arquivo dos nossos códigos é .py. Vamos escrever um programa simples. Podemos abrir o editor de texto e escrever um programa para simplesmente exibir uma saudação na tela e se despedir quando o usuário digitar qualquer coisa no teclado, como na Figura 5.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig5.png"/>
+  <h6>Figura 5 – Arquivo contendo um programa simples em Python.</h6>
+</div>
+  
+Salvamos nosso arquivo com o nome hellobye.py
+  
+Se você já configurou o interpretador Python seu prompt de comando, agora basta especificar o caminho do seu arquivo no prompt. Isso mesmo: não há necessidade de chamar o interpretador digitando python. Simplesmente especifique o caminho do arquivo no seu promp de comando e o seu arquivo irá executar.
+
+[!] DICA: se você ficar com preguiça de digitar o caminho do arquivo, pode simplesmente arrastá-lo para o prompt e ele reconhecerá o caminho automaticamente
+  
+Quando o caminho do arquivo estiver especificado no prompt, basta teclar enter e o código será executado, sem maiores problemas.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig6.png"/>
+  <h6>Figura 6 – O código é executado em sua completude, sem necessidade de digitar comandos linha por linha no prompt. Muito mais elegante.</h6>
+</div>
+  
+<h3>5.2) Importando módulos em arquivos de código</h3>
+<h4>5.2.1) Módulos padrões</h4>
+Para acessarmos módulos padrões de Python dentro dos nossos arquivos de código, ao invés de os chamarmos no prompt, devemos declará-los no cabeçalho do código, da mesma forma que as bibliotecas em linguagem C. Por exemplo: suponhamos o código da Figura 3, que calcula a raiz quadrada de um número que o usuário insere.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig7.png"/>
+  <h6>Figura 7 – Programa para calcular raiz quadrada. Observe que o import precisou ser chamado no início do script.</h6>
+</div>
+  
+[1] LEMBRE-SE: A função input() deve ser usada dentro da função conversão int(). Lembra da primeira aula? O input lê a entrada do usuário como uma string, mas precisamos que a entrada seja um inteiro para operar a raiz quadrada. 
+[2] LEMBRE-SE: Para acessarmos as funções que existem em um módulo, precisamos especificar de qual módulo está vindo a função, no formato ```nomeDoMódulo.nomeDaFunção()```.
+  
+Agora podemos simplesmente chamar nosso programa no prompt de comando e executá-lo.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig8.png"/>
+  <h6>Figura 8 – Execução do código da Figura 3</h6>
+</div>
+  
+<h4>5.2.2) Módulos criados pelo programador</h4>
+Para importamos dentro do código um módulo que nós mesmos criamos, basta que os dois arquivos estejam dentro da mesma pasta. Vamos primeiramente criar um módulo simples que define uma função que calcula o dobro de um número inserido pelo usuário. Chamaremos esse módulo de vezesdois.py.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig9.png"/>
+  <h6>Figura 9 – Módulo criado por nós, vezesdois.py</h6>
+</div>
+
+Agora escrevemos um programa que solicita ao usuário que insira um número. Importamos nosso módulo vezesdois, pedimos um número ao usuário e chamamos a função dobro de vezesdois, passando o valor do usuário como parâmetro da função.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig10.png"/>
+  <h6>Figura 10 – Nosso programa, que utiliza a função dobro do módulo vezesdois</h6>
+</div>
+  
+Salvamos nosso programa como boraver.py, na mesma pasta que nosso módulo.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig11.png"/>
+  <h6>Figura 11 – Os arquivos devem estar na mesma pasta</h6>
+</div>
+  
+Executamos agora nosso programa boraver.py normalmente no prompt de comando.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig12.png"/>
+  <h6>Figura 12 – Executando o código que criamos, que chama o módulo que criamos. Dá muito trabalho ser um programador tão autossuficiente...</h6>
+</div>
