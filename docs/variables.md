@@ -1,4 +1,4 @@
-# Variáveis
+# VARIÁVEIS
 
 A parte interessante do Python é que essa é uma linguagem de tipos dinâmicos: ou seja, a
 declaração de tipo da variável não precisa ser feita. A própria linguagem é capaz de escolher que tipo usar para cada variável, podendo alterá-lo durante a execução do programa. Segue um exemplo dessa característica:
