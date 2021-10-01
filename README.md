@@ -120,8 +120,7 @@ A entrada e a saída de dados referem-se à dados do mundo externo sendo express
 digitalmente e vice-versa, respectivamente. 
 
 ### 7.1) Função print()
-A grosso modo, a função print() serve para imprimir os argumentos dentro dela para a saída do programa. Ao passarmos valores ou variáveis para a função print, elas são mostradas no terminal. Um exemplo simples é mostrado na figura abaixo:
-
+A grosso modo, a função print() serve para imprimir os argumentos dentro dela para a saída do programa. Ao passarmos valores ou variáveis para a função print, elas são mostradas no terminal. Um exemplo simples é mostrado na figura abaixo:<br />
 <br /><div align="center">
   <img height="120em" src="./img/readme/cod2.png"/>
 </div>
