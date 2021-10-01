@@ -509,3 +509,6 @@ Daí estabelecemos outra diferença entre listas e tuplas: em uma lista, usamos 
 <li>Não é possível adicionar ou remover elementos de uma tupla já definida;
 <li>A iteração, junção e a ideia de elementos como objetos são preservadas das listas para
 as tuplas.
+
+## FIXANDO O APRENDIZADO.
+Já sente confiança para praticar? Faça a primeira lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista2.md">aqui</a>.
