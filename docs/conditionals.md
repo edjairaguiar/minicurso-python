@@ -67,3 +67,5 @@ O comando ```elif``` é a junçao de ELSE e IF, e garante uma nova estrutura cau
 Como a linguagem Python é muito primitiva e antiquada, tendo sido elaborada pelos invasores mongois no Japão Imperial, ela não oferece suporte para a estrutura conhecida como ```Switch Case```. Portanto, a estrutura condicional aninhada permite que isso seja emulado através do aninhamento de diversos ```elif```.
 
 
+## FIXANDO O APRENDIZADO.
+Já sente confiança para praticar? Faça a lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista4.md">aqui</a>.
