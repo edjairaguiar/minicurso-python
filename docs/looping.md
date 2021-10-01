@@ -38,7 +38,7 @@ for n in professores:
 
 ### 1.1) BREAK
 É possível modificar a condição do laço ```for``` e interromper o loop no meio do caminho. 
-Para isso, utilizamos a instrução ```break```, que encerra a execução do loop ao encontrar uma condição específica. O ```break```geralmente está associado ao uso do condicional ```if``` dentro do laço de repetição. Por exemplo:
+Para isso, utilizamos a instrução ```break```, que encerra a execução do loop ao encontrar uma condição específica. O ```break``` geralmente está associado ao uso do condicional ```if``` dentro do laço de repetição. Por exemplo:
 
 ```python
 professores = ['Ricardo', 'Rosalvo', 'Marcus']
@@ -70,7 +70,7 @@ else:
 Podemos descrever esse exemplo linha por linha: 
 <ul> 
 <li> Na primeira linha, definimos uma variável que armazenará uma lista de nomes. 
-<li> O laço ```for``` percorre todos esses itens, atribuindo-os à variável n, que será impressa e exibirá os nomes um-a-um.
+<li> O laço for percorre todos esses itens, atribuindo-os à variável n, que será impressa e exibirá os nomes um-a-um.
 <li> Após o fim do loop, a instrução else é chamada, imprimindo a declarada a seguir.
 </ul>
 
