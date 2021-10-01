@@ -141,7 +141,7 @@ Ao chamar o interpretador Python diretamente pelo prompt de comando (simplesment
 diretamente com o prompt de comando, declarando variáveis, funções e tudo o que você pode fazer num programa interessante.
 Podemos começar inicialmente pelo modo interativo, pois ele é muito interessante para aprendermos do zero.
 
-<div align="center" padding-top="10px">
+<br /><div align="center" padding-top="10px">
   <img height="170em" src="./img/readme/cod1.png"/>
 </div>
 
@@ -150,9 +150,9 @@ A entrada e a saída de dados referem-se à dados do mundo externo sendo express
 digitalmente e vice-versa, respectivamente. 
 
 ### 7.1) Função print()
-A grosso modo, a função print() serve para imprimir os argumentos dentro dela para a saída do programa. Ao passarmos valores ou variáveis para a função print, elas são mostradas no terminal. Um exemplo simples é mostrado na Figura abaixo:
+A grosso modo, a função print() serve para imprimir os argumentos dentro dela para a saída do programa. Ao passarmos valores ou variáveis para a função print, elas são mostradas no terminal. Um exemplo simples é mostrado na figura abaixo:
 
-<div align="center">
+<br /><div align="center">
   <img height="120em" src="./img/readme/cod2.png"/>
 </div>
 
@@ -163,8 +163,8 @@ A função input() faz uma pausa no programa e espera que o usuário digite algo
   <img height="70em" src="./img/readme/cod3.png"/>
 </div>
 
-Entretanto, é importante frisar que a função input() lê a entrada como uma string. Caso queiramos que a entrada seja um número inteiro ou float, precisamos usar as funções de conversão int() e float(). É necessário que façamos isso, uma vez que as operações aritméticas só podem ser realizadas com tipos numéricos. A Figura abaixo dá um exemplo dessa conversão.
+<br />Entretanto, é importante frisar que a função input() lê a entrada como uma string. Caso queiramos que a entrada seja um número inteiro ou float, precisamos usar as funções de conversão int() e float(). É necessário que façamos isso, uma vez que as operações aritméticas só podem ser realizadas com tipos numéricos. A figura abaixo dá um exemplo dessa conversão.
 
-<div align="center">
+<br /><div align="center">
   <img height="100em" src="./img/readme/cod4.png"/>
 </div>
