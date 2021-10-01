@@ -8,7 +8,7 @@ Antes de entrarmos nas estruturas propriamente ditas, vamos conhecer os operador
 Os operadores condicionais são passados como parâmetros e utilizados para fazer as comparações dos valores que são passados para a estrutura condicional. A tabela abaixo mostra os operadores que podemos utilizar:
 
 <br /><div align="center">
-  <img height="250em" src="https://user-images.githubusercontent.com/62587952/135553318-efe51573-a701-463b-b368-77d1cf7f85f9.png"/>
+  <img height="250em" src="../img/conditionals/tabela1.png"/>
 </div>
 
 <br />A estrutura condicional do Python é conhecida como "IF", que, em tradução para o português, significa "SE".
