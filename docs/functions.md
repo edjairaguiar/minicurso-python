@@ -1,4 +1,4 @@
-<h2>MÓDULOS</h2>
+<h2>1) MÓDULOS</h2>
 
 Módulos são arquivos de código Python com a extensão .py, que podem ser importados por
 outros módulos.
@@ -17,7 +17,7 @@ Nós chamamos um módulo no nosso programa utilizando a linha de comando
 
 A extensão .py deve ser omitida.
 
-<h2>CRIANDO E ACESSANDO ATRIBUTOS DE MÓDULOS</h2>
+<h2>2) CRIANDO E ACESSANDO ATRIBUTOS DE MÓDULOS</h2>
 
 Cada módulo tem suas próprias declarações de variáveis, funções, classes... cada uma delas carrega com si seu nome. Podemos acessar as variáveis e funções do módulo no nosso programa. Para isso, utilizamos a notação
 
@@ -44,7 +44,7 @@ Agora que salvamos nosso módulo, vamos chamá-lo para nosso programa, escrevend
   <h6>Figura 3– Chamamos a função f() através do módulo teste.py</h6>
 </div>
 
-<h2>MÓDULOS PADRÕES</h2>
+<h2>3) MÓDULOS PADRÕES</h2>
 O Python traz uma biblioteca padrão de módulos, embutidas no interpretador da linguagem. Esses módulos permitem o acesso a algumas operações que não fazem parte do núcleo da linguagem, mas estão no interpretador por eficiência.
 
 Por exemplo: funções matemáticas não estão tradicionalmente inclusas no escopo de funções de entrada e saída da linguagem. Nesse caso, temos duas opções: implementá-las manualmente; ou importar o módulo math, que disponibiliza grande parte das funções matemáticas que conhecemos na calculadora científica.
@@ -87,6 +87,6 @@ Na Figura 4 temos um exemplo da utilização do módulo math, utilizando a funç
   <h6>Figura 4 – Cálculo de raiz quadrada com função math.sqrt</h6>
 </div>
 
-<h2>OBSERVAÇÕES</h2>
+<h2>4) OBSERVAÇÕES</h2>
 <li>O editor de texto usado é o Visual Studio Code. Entretanto é possível utilizar qualquer outro editor de texto, desde que a extensão do arquivo seja salva como .py. Outro editores de texto que podem ser usados: WordPad, Notepad++.
 <li>A importação de módulos é custosa computacionalmente, portanto o Python só a realiza uma vez. Caso editemos o módulo durante a execução do nosso código e precisemos que a edição seja utilizada, podemos forçar que o módulo seja importado novamente usando o comando reload(nomeDoMódulo).
