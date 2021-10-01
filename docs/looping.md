@@ -103,3 +103,5 @@ else:
       print("[Galvão Bueno's voice] É PENTAAAAAAA, É PENTAAAAAAAA")
 ```
 
+## FIXANDO O APRENDIZADO.
+Já sente confiança para praticar? Faça a lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista3.md">aqui</a>.
