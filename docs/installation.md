@@ -1,4 +1,4 @@
-# Instalação
+# INSTALAÇÃO
 
 Aqui você saberá como instalar o interpretador do Python em seu desktop e poderá também encontrar todos os detalhes referentes à linguagem a partir de [python.org](https://www.python.org).
 
