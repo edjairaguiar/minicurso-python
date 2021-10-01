@@ -1,5 +1,7 @@
 # Guia de Programação em Python
 
+<br/>
+
 Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, para melhor estruturar seu aprendizado, siga a ordem proposta no sumário abaixo:
 
 ## Sumário
@@ -17,3 +19,7 @@ Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, par
 - [@anisiobfilho](https://github.com/anisiobfilho)
 - [@edjairaguiar](https://github.com/edjairaguiar)
 - [@elaynelemos](https://github.com/elaynelemos)
+
+## Licença
+----
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
