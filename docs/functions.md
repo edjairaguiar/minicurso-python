@@ -511,4 +511,4 @@ Daí estabelecemos outra diferença entre listas e tuplas: em uma lista, usamos 
 as tuplas.
 
 ## FIXANDO O APRENDIZADO.
-Já sente confiança para praticar? Faça a primeira lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista2.md">aqui</a>.
+Já sente confiança para praticar? Faça a lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista2.md">aqui</a>.
