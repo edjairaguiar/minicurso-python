@@ -391,4 +391,121 @@ Com o método count, podemos obtere os seguintes resultados:
   </table>
 </div>
 
-  
+<h2>7) DICIONÁRIO: DEFINIÇÃO</h2>
+Em Python, os dicionários podem ser definidos como uma coleção de itens, sem ordem específica, onde cada elemento dentro do dicionário tem um identificador associado a ele. Esse identificador é chamado de chave. Esse tipo de estrutura é muito utilizado quando queremos, por exemplo, fazer bancos de dados pequenos e internos ao nosso programa, uma vez que cada dado vai ter uma identificação única.
+É importante frisar que, como cada valor armazenado possui uma chave, as chaves devem ser únicas para que possamos acessar os elementos armazenados através delas.
+Dessa forma, podemos enxergar o dicionário como uma coleção de pares na forma chave:valor. Assim como as listas, vistas na aula anterior, os dicionários têm tamanho variável e podem conter objetos de qualquer tipo, inclusive outros dicionários. Isso também funciona para as chaves: os identificadores também podem ser qualquer objeto.
+
+<h2>8) DECLARANDO DICIONÁRIOS</h2>
+Em ambos os casos abaixo, os elementos são separados das suas chaves com dois pontos (:) e separados entre si através da vírgula (,).
+
+<h3>8.1) Utilizando {}</h3>
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig13.png"/>
+  <h6>Figura 13 – Declaração de dicionário com {}</h6>
+</div>
+
+<h2>8.2) Utilizando o método dict()</h2>
+Essa forma se diferencia da anterior apenas pelo uso do método dict(), que deve englobar a declaração do dicionário.
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig14.png"/>
+  <h6>Figura 14 – Declaração de dicionário com o método dict()</h6>
+</div>
+
+<h2>9) OPERAÇÕES COM DICIONÁRIOS</h2>
+<h3>9.1) Retornando elementos pelo índice</h3>
+Para retornar um elemento pelo seu índice, podemos utilizar os colchetes ([]) ou o método get(). Em ambos os casos, passamos a chave do elemento que desejamos recuperar. Vamos declarar o seguinte dicionário:
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig15.png"/>
+  <h6>Figura 15 – Dicionário de funcionários de uma empresa genérica</h6>
+</div>
+
+Podemos recuperar os nomes dos funcionários dessa empresa através dos seus cargos:
+<div align='center'>
+  <table>
+    <tr>
+      <td>print(dic_funcionarios[‘RH’])</td>
+      <td>João</td>
+    </tr>
+    <tr>
+      <td>print(dic_funcionarios.get(‘Gerente’))</td>
+      <td>Maria</td>
+    </tr>
+  </table>
+</div>
+
+<h3>8.2) Tamanho de um dicionário</h3>
+Assim como para várias estruturas que já vimos anteriormente, o método len() novamente aparece por aqui para nos passar o tamanho de um dicionário.
+<div align='center'>
+  <table>
+    <tr>
+      <td>print(len(dic_funcionarios))</td>
+      <td>4</td>
+  </table>
+</div>
+
+<h3>8.3) Adicionar elementos</h3>
+Também existem duas formas. Na primeira, passamos o valor da nova chave e atribuímos um elemento a ela, da seguinte forma:
+<div align='center'>
+  <table>
+    <tr>
+      <td>dic_funcionarios[‘Financeiro’] = ‘Renata</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>print(dic_funcionarios))</td>
+      <td>{'Operador' : 'Marcelo', 'Gerente' : 'Maria', 'RH' : 'João', 'Comercio': 'José', ‘Financeiro’ : ‘Renata’}</td>
+    </tr>
+  </table>
+</div>
+
+A segunda forma é utilizando o método update(), passando como parâmetro a chave e o elemento a ser adicionado:
+<div align='center'>
+  <table>
+    <tr>
+      <td>dic_funcionarios.update({‘Publi’ : ‘Pedro’})</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>print(dic_funcionarios))</td>
+      <td>{'Operador' : 'Marcelo', 'Gerente' : 'Maria', 'RH' : 'João', 'Comercio' : 'José', ‘Financeiro’ : ‘Renata’, ‘Publi’ : ‘Pedro’}</td>
+    </tr>
+  </table>
+</div>
+
+<h3>8.4) Removendo elementos</h3>
+Utilizamos o método pop() seguido da chave do elemento que deve ser removido.
+
+<div align='center'>
+  <table>
+    <tr>
+      <td>dic_funcionarios.pop(‘RH’)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>print(dic_funcionarios))</td>
+      <td>{'Operador' : 'Marcelo', 'Gerente' : 'Maria', 'Comercio' : 'José', ‘Financeiro’ : ‘Renata’, ‘Publi’ : ‘Pedro’}</td>
+    </tr>
+  </table>
+</div>
+
+<h2>9) TUPLAS</h2>
+As tuplas, apesar de raramente mencionadas, são muito utilizadas em diversas aplicações. Tuplas são como listas, se diferenciando por ter imutável. Isso quer dizer que, após definida, a tupla não permite a adição ou remoção de elementos.
+Porém é um equívoco pensar nas tuplas como listas constantes, uma vez que listas são destinadas a serem sequência homogêneas, enquanto tuplas são estruturas heterogêneas (Eby, 2005).
+O que Phillip J. Eby quer dizer é: quando pensamos em uma lista, pensamos em organizar coisas do mesmo tipo. Pensamos numa lista de filmes, de livros, de séries, de disciplinas, de professores... Já quando pensamos em tuplas, devemos pensar em elementos de tipos distintos. Por exemplo, podemos fazer uma tupla que salve a data de aniversário de alguém:
+
+<div align="center">
+  <img height="150em" src="../img/functions/fig16.png"/>
+  <h6>Figura 16 – Tupla que contém dia, mês e ano</h6>
+</div>
+
+Daí estabelecemos outra diferença entre listas e tuplas: em uma lista, usamos colchetes para delimitar seus elementos, enquanto na tupla usamos os parênteses. Apesar disso, todos os outros métodos que estudamos sobre listas também se aplicam às tuplas, com exceção da adição e da remoção de elementos. Resumimos, então:
+
+<li>Listas são delimitadas por colchetes, tuplas são delimitadas por parênteses;
+<li>A ordem dos elementos de uma tupla não pode de alterada;
+<li>Não é possível adicionar ou remover elementos de uma tupla já definida;
+<li>A iteração, junção e a ideia de elementos como objetos são preservadas das listas para
+as tuplas.
