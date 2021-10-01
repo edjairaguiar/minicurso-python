@@ -1,6 +1,7 @@
 # Guia de Programação em Python
 
 <br/>
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, para melhor estruturar seu aprendizado, siga a ordem proposta no sumário abaixo:
 
@@ -167,9 +168,3 @@ Entretanto, é importante frisar que a função input() lê a entrada como uma s
 <div align="center">
   <img height="100em" src="./img/readme/cod4.png"/>
 </div>
-
-
-
-## Licença
-----
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
