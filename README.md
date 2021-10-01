@@ -1,8 +1,7 @@
 # Guia de Programação em Python
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 <br/>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, para melhor estruturar seu aprendizado, siga a ordem proposta no sumário abaixo:
 
