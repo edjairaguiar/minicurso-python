@@ -7,11 +7,11 @@ As estruturas de condição, ou condicionais, como o nome sugere, são funções
 Antes de entrarmos nas estruturas propriamente ditas, vamos conhecer os operadores condicionais da linguagem Python. 
 Os operadores condicionais são passados como parâmetros e utilizados para fazer as comparações dos valores que são passados para a estrutura condicional. A tabela abaixo mostra os operadores que podemos utilizar:
 
-<div align="center">
-  <img src="./img/conditionals/tabela1.png"/>
+<br /><div align="center">
+  <img height="250em" src="https://user-images.githubusercontent.com/62587952/135553318-efe51573-a701-463b-b368-77d1cf7f85f9.png"/>
 </div>
 
-A estrutura condicional do Python é conhecida como "IF", que, em tradução para o português, significa "SE".
+<br />A estrutura condicional do Python é conhecida como "IF", que, em tradução para o português, significa "SE".
 Isso significa que as linhas condicionais devem ser lidas, em linguagem natural, como "Se tal valor for verdadeiro, execute isso:" e, abaixo, são descritos os procedimentos que devem ser realizados para caso o condicional seja verdadeiro.
 <br />
 <br />
