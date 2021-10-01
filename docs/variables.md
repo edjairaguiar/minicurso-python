@@ -41,4 +41,4 @@ TypeError: can't multiply sequence by non-int of type 'str'
 O python possui também tipos e estruturas de dados mais complexas e é importante explorá-las, como [`tuple`, `dict`, `list`](https://docs.python.org/3.8/library/stdtypes.html#sequence-types-list-tuple-range).
 
 ## FIXANDO O APRENDIZADO.
-Já sente confiança para praticar? Faça a primeira lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista1.md">aqui</a>.
+Já sente confiança para praticar? Faça a lista de exercícios clicando <a href="https://github.com/edjairaguiar/minicurso-python/blob/main/exercicios/lista1.md">aqui</a>.
