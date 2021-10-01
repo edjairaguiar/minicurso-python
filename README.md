@@ -13,6 +13,7 @@ Bem-vinda(o) ao guia para os seus primeiros passos no Python! Indicamos que, par
 5. [Funções](./docs/functions.md)
 6. [Desvios Condicionais](./docs/conditionals.md)
 7. [Estruturas de Repetição](./docs/looping.md)
+8. [Aplicação](./exemplo/)
 
 ## Elaboração
 
